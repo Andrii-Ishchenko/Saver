@@ -4,74 +4,93 @@
 		Saver - simple app that helps you to track your expenses.
 	</title>
 	<link rel="stylesheet" type="text/css" href="../assets/libs/semantic/dist/semantic.css"/>
+	<link rel="stylesheet" type="text/css" href="../assets/libs/semantic/dist/components/dropdown.css"></link>
 	<script src="../assets/libs/jquery/jquery-3.0.0.js"></script>
 	<script src="../assets/libs/semantic/dist/semantic.js"/> </script>
+	<script src="../assets/libs/semantic/dist/components/dropdown.js"></script>
 	<script>
 	$(document).ready(function(){
 		$("#sidebar").sidebar({dimPage:false});
-		$("#sidebar").sidebar("attach events", "#sidebarOpener")
+		$("#sidebar").sidebar("attach events", "#sidebarOpener");
+		$("#categoriesDropdown").dropdown();
 	});
 	</script>	
 </head>
 
-	
-<!-- <body>
-	  <div class="ui left vertical inverted menu sidebar visible">
-		<a class="item">
-				Item 1
-				</a>
-				<a class="item">
-				Item 2
-				</a>
-				<a class="item">
-				Item 3
-				</a>
-	  </div>
-	  <div class ="pusher">
-	  
-		<div class="ui top menu">
-			<div class="ui container">
-					<a href="#" class="header item">				
-							Project Name
-					</a>
-					<a href="#" class="item">Home</a>
-					<a href="#" class="item">Home</a>
-					<a href="#" class="item">Home</a>
-					<a href="#" class="item">Home</a>								
-			</div>
-		</div>
-
-		<div class="ui container">
-			<div class="ui raised segment">
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-			</div>
-		</div>
-	
-	  </div>
-</body> -->
-
 <body>
-	<div class="ui left vertical inverted menu sidebar" id="sidebar">
-		<a class="l item">
-		Item 1
+<!-- 	<div class="ui centered thin grid left sidebar" id="sidebar">
+    <div class="center aligned column">
+        <div class="ui vertical inverted  labeled icon menu ">
+          <a class="item">
+			<i class="dashboard icon"></i>	Dashboard
+		</a>		
+		<a class="item">
+			<i class="ordered list icon"></i>	Goals
 		</a>
 		<a class="item">
-		Item 2
+			<i class="shop icon"></i>	Categories
 		</a>
 		<a class="item">
-		Item 3
+			<i class="bar chart icon"></i>	Statistics
+		</a>
+        </div>        
+    </div>
+</div> -->
+
+	<div class="ui left vertical inverted labeled icon menu thin sidebar" id="sidebar">
+		<a class="item">
+			<i class="dashboard icon"></i>	Dashboard
+		</a>		
+		<a class="item">
+			<i class="ordered list icon"></i>	Goals
+		</a>
+		<a class="item">
+			<i class="shop icon"></i>	Categories
+		</a>
+		<a class="item">
+			<i class="bar chart icon"></i>	Statistics
 		</a>
 	</div> 
 
 	<div class="pusher">
 		<div class="ui top attached menu">	  
 			<a href="#" class="header item" id="sidebarOpener">	
-<i class="content icon"></i>			
+			<i class="sidebar icon"></i>			
 			Menu
 			</a>	
 		</div>
 	
-		<div class="ui container">
+		<div class="ui container" >
+			<div class="ui padded grid">
+				<div class="centered row">
+					<div class="six wide column">
+
+							<div class="ui top attached center aligned  green segment"> 
+								Track your expenses
+							</div>
+							<div class="ui attached  segment">
+								<div class="ui fluid big input">
+								<input type="text" placeholder="Enter ammount..." >							
+							</div>												
+							</div>
+							<div class="ui attached  segment">
+								<div class="ui floating  labeled search icon button dropdown" id="categoriesDropdown">
+								  <i class="shop icon"></i>
+								  <span class="text">Select Category</span>
+								  <div class="menu">
+									<div class="item">Category 1</div>
+									<div class="item">Category 2</div>
+									<div class="item">Category 3</div>
+									<div class="item">Category 4</div>
+									<div class="item">Category 5</div>
+								  </div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		
+		
 			<div class=" ui clearing segment">
 					<p> Consider donating money to our super app.</p>
 					
