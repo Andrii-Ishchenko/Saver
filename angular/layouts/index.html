@@ -3,9 +3,9 @@
 	<title>
 		Saver - simple app that helps you to track your expenses.
 	</title>
-	<link rel="stylesheet" type="text/css" href="../assets/css/semantic.css"/>
-	<script src="../assets/js/jquery-3.0.0.js"></script>
-	<script src="../assets/js/semantic.js"/> </script>
+	<link rel="stylesheet" type="text/css" href="../assets/libs/semantic/dist/semantic.css"/>
+	<script src="../assets/libs/jquery/jquery-3.0.0.js"></script>
+	<script src="../assets/libs/semantic/dist/semantic.js"/> </script>
 	<script>
 	$(document).ready(function(){
 		$("#sidebar").sidebar({dimPage:false});
@@ -51,7 +51,7 @@
 </body> -->
 
 <body>
-	<div class="ui left vertical inverted menu sidebar visible" id="sidebar">
+	<div class="ui left vertical inverted menu sidebar" id="sidebar">
 		<a class="l item">
 		Item 1
 		</a>
@@ -65,7 +65,8 @@
 
 	<div class="pusher">
 		<div class="ui top attached menu">	  
-			<a href="#" class="header item" id="sidebarOpener">				
+			<a href="#" class="header item" id="sidebarOpener">	
+<i class="content icon"></i>			
 			Menu
 			</a>	
 		</div>
