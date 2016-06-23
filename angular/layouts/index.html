@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>
-		Saver - simple app that helps you to track your expenses.
+		Saver - Track expenses
 	</title>
 	<link rel="stylesheet" type="text/css" href="../assets/libs/semantic/dist/semantic.css"/>
 	<link rel="stylesheet" type="text/css" href="../assets/libs/semantic/dist/components/dropdown.css"></link>
@@ -53,20 +53,22 @@
 	</div> 
 
 	<div class="pusher">
-		<div class="ui top attached menu">	  
+		<div class="ui top attached large menu">	  
 			<a href="#" class="header item" id="sidebarOpener">	
 			<i class="sidebar icon"></i>			
 			Menu
 			</a>	
 		</div>
-	
+
 		<div class="ui container" >
 			<div class="ui padded vertically divided grid">
+
 				<div class="row">
 					<div class="six wide column">
 
 							<div class="ui top attached center aligned  green segment"> 
 								Track your expenses
+								<i class="info circle icon"></i>
 							</div>
 							<div class="ui attached  segment">
 								<div class="ui fluid big input">
@@ -74,7 +76,7 @@
 								</div>												
 							</div>
 							<div class="ui attached  segment">
-								<div class="ui floating fluid labeled search icon button dropdown" id="categoriesDropdown">
+								<div class="ui floating fluid right labeled search icon button dropdown" id="categoriesDropdown">
 								  <i class="shop icon"></i>
 								  <span class="text">Select Category</span>
 								  <div class="menu">
@@ -87,9 +89,33 @@
 								</div>
 							</div>
 							<div class="ui attached clearing segment">
-							<button class="ui fluid green button">Add Expense </button>
+								<button class="ui fluid right labeled icon green button"><i class="plus icon"></i>Add Expense </button>
 							</div>
 					</div>
+					<div class="ten wide column">
+						<div class="ui top attached center aligned  green segment"> 
+									Summary
+						</div>
+						<div class="ui attached padded segment">
+							<div class="ui two small statistics">
+								<div class="ui red statistic">
+									<div class="value"> 1337 </div>
+									<div class="label">Total Expenses </div>
+								</div>
+								<div class="ui green statistic">
+									<div class="value"> 1488 </div>
+									<div class="label">Total Saved </div>
+								</div>
+							</div>				
+						</div>
+						<div class="ui attached segment">										
+							<div class="ui labeled icon fluid three item menu">
+								<a class="item"><i class="gamepad icon"></i> Action 1 </a>
+								<a class="item"><i class="video camera icon"></i> Action 2 </a>
+								<a class="item"><i class="video play icon"></i> Action 3 </a>
+							</div>				
+						</div>
+						</div>
 				</div>
 				<div class="row">
 					<div class="five wide right floated column">
