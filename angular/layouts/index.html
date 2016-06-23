@@ -13,6 +13,7 @@
 		$("#sidebar").sidebar({dimPage:false});
 		$("#sidebar").sidebar("attach events", "#sidebarOpener");
 		$("#categoriesDropdown").dropdown();
+		$("#fck").popup();
 	});
 	</script>	
 </head>
@@ -40,6 +41,9 @@
 	<div class="ui left vertical inverted labeled icon menu thin sidebar" id="sidebar">
 		<a class="item">
 			<i class="dashboard icon"></i>	Dashboard
+		</a>
+		<a class="item">
+			<i class="history icon"></i>	History
 		</a>		
 		<a class="item">
 			<i class="ordered list icon"></i>	Goals
@@ -89,7 +93,12 @@
 								</div>
 							</div>
 							<div class="ui attached clearing segment">
-								<button class="ui fluid right labeled icon green button"><i class="plus icon"></i>Add Expense </button>
+								<div class="ui two buttons">
+									<button class="ui right labeled icon red button"><i class="plus icon"></i>Add Expense </button>
+									<button class="ui right labeled icon green button"><i class="plus icon"></i>Add Saving </button>
+								</div>
+								
+	
 							</div>
 					</div>
 					<div class="ten wide column">
@@ -104,7 +113,7 @@
 								</div>
 								<div class="ui green statistic">
 									<div class="value"> 1488 </div>
-									<div class="label">Total Saved </div>
+									<div class="label"><span id="fck" data-content="FUCKING">Total</span> Saved </div>
 								</div>
 							</div>				
 						</div>
@@ -116,6 +125,18 @@
 							</div>				
 						</div>
 						</div>
+				</div>
+				<div class="row">
+					<div class="six wide column">
+						<div class="ui top attached center aligned segment"> 
+							History	<i class="history icon"></i>
+						</div>
+					</div>
+					<div class="ten wide column">
+						<div class="ui top attached center aligned  segment"> 
+							Graphs	<i class="line chart icon"></i>
+						</div>
+					</div>
 				</div>
 				<div class="row">
 					<div class="five wide right floated column">
