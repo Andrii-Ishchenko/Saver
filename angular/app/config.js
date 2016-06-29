@@ -1,8 +1,8 @@
 (function(){
-	angular.module("saver")
+	angular.module('saver')
 		.config([config]);
 		
 	function config(){
-		
+
 	}
 })();
